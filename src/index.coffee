@@ -15,7 +15,7 @@ ua = String(nav.userAgent || "").toLowerCase()
 IsMobile = ua.indexOf('mobile') isnt -1 || ua.indexOf('android') isnt -1
 
 CurrLanguage = nav.language || nav.browserLanguage || ""
-CurrLanguage = currLanguage.split("-")[0] || "en"
+CurrLanguage = CurrLanguage.split("-")[0] || "en"
 
 IsAndroid = false
 IsiOS = false
@@ -27,13 +27,13 @@ uaResult = /android (\d+(?:\.\d+)+)/i.exec(ua) || /android (\d+(?:\.\d+)+)/i.exe
 if uaResult
   IsAndroid = true
   OsVersion = uaResult[1] || ''
-  OsMainVersion = parseInt(osVersion) || 0
+  OsMainVersion = parseInt(OsVersion) || 0
 
 uaResult = /(iPad|iPhone|iPod).*OS ((\d+_?){2,3})/i.exec(ua)
 if uaResult
   IsiOS = true
   OsVersion = uaResult[2] || ''
-  OsMainVersion = parseInt(osVersion) || 0
+  OsMainVersion = parseInt(OsVersion) || 0
 
 
 BrowserType = "unknown"
