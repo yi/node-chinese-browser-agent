@@ -1,5 +1,5 @@
 {
-  "name": "chinese-browser-agent",
+  "name": "who-browser-is",
   "description": "this is a handy module to detect browser user agent, especially for Chinese market (wechat, qqbrowser and etc)",
   "version": "0.1.0",
   "homepage": "https://github.com/yi/node-chinese-browser-agent",
