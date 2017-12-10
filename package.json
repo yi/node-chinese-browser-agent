@@ -3,7 +3,7 @@
   "description": "this is a handy module to detect browser user agent, especially for Chinese market (wechat, qqbrowser and etc)",
   "version": "0.1.0",
   "homepage": "https://github.com/yi/node-chinese-browser-agent",
-  "author": "yi <yi2004@gmail.com>",
+  "author": "fangjimjim <fangjimjim@qq.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/yi/node-chinese-browser-agent.git"
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
   },
-  "keywords": ["useragent", "wechat", "wexin"],
+  "keywords": ["useragent", "wechat", "wexin", "qq"],
   "license": "MIT"
 }
