@@ -1,4 +1,4 @@
-
+BROWSER_TYPE_QQ = "qq"
 BROWSER_TYPE_WECHAT = "wechat"
 BROWSER_TYPE_ANDROID = "android"
 BROWSER_TYPE_IE = "id"
@@ -38,12 +38,14 @@ if uaResult
 
 BrowserType = "unknown"
 
-typeReg1 = /mqqbrowser|sogou|qzone|liebao|micromessenger|ucbrowser|360 aphone|360browser|baiduboxapp|baidubrowser|maxthon|mxbrowser|trident|miuibrowser/i
+typeReg1 = /mqqbrowser|sogou|qq|qzone|liebao|micromessenger|ucbrowser|360 aphone|360browser|baiduboxapp|baidubrowser|maxthon|mxbrowser|trident|miuibrowser/i
 typeReg2 = /qqbrowser|chrome|safari|firefox|opr|oupeng|opera/i
 browserTypes = typeReg1.exec(ua) || typeReg2.exec(ua)
 BrowserType = if browserTypes then browserTypes[0] else BROWSER_TYPE_UNKNOWN
 if BrowserType is 'micromessenger'
   BrowserType = BROWSER_TYPE_WECHAT
+else if BrowserType is 'qq'
+  BrowserType = BROWSER_TYPE_QQ
 else if BrowserType is 'safari' and ua.match(/android.*applewebkit/)
   BrowserType = BROWSER_TYPE_ANDROID
 else if BrowserType is 'trident'
