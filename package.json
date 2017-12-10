@@ -1,9 +1,9 @@
 {
   "name": "chinese-browser-agent",
   "description": "this is a handy module to detect browser user agent, especially for Chinese market (wechat, qqbrowser and etc)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/yi/node-chinese-browser-agent",
-  "author": "fangjimjim <fangjimjim@qq.com>",
+  "author": "yi <yi2004@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git://github.com/yi/node-chinese-browser-agent.git"
